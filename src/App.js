@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import imagen_0 from './imgs/rey_ataulfo.png';
+import imagen_1 from './imgs/rey_recesvinto.png';
+import imagen_2 from './imgs/rey_teodorico.png';
+import './estilos.css';
 
 function App() {
+  let nombre_reyes=["Ataulfo", "Recesvinto", "Teodorico"]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contenedor">
+      <div className="caja">
+        <img src={imagen_0} />
+        <div className="nombre">{nombre_reyes[0]}</div>
+      </div>
+
+      <div className="caja">
+        <img src={imagen_1} />
+        <div className="nombre">{nombre_reyes[1]}</div>
+      </div>
+
+      <div className="caja">
+        <img src={imagen_2} />
+        <div className="nombre">{nombre_reyes[2]}</div>
+      </div>
     </div>
+
+    
+  
   );
 }
 
